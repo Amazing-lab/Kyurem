@@ -7,10 +7,11 @@ $ban[$guildID;$findMember[$message[1];false];7;$replaceText[$replaceText[$checkC
 
 
 $title[Member Banded...!]
-$description[
-<@$replaceText[$replaceText[$findMember[$message[1];false];<@;];>;]> has been **banned by <@$authorID>**
-Reason: $replaceText[$replaceText[$checkCondition[$messageSlice[1]==];true;No reason provided];false;$messageSlice[1]
-]
+$description[>>>
+<@$replaceText[$replaceText[$findMember[$message[1];false];<@;];>;]> has been **banned** by <@$authorID>
+**Reason:** \` $replaceText[$replaceText[$checkCondition[$messageSlice[1]==];true;No reason provided];false;$messageSlice[1]
+ \`] 
+ $color[$getVar[color]]
 $addTimestamp
 
 $onlyPerms[banmembers;Uh oh...You do not have \`BAN_MEMBERS\` permission to use this command.{extraOptions:{delete:5s}}]
