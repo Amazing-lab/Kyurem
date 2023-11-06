@@ -13,9 +13,9 @@ $description[>>>
 $color[$getvar[color]]
 $addTimesTamp
     $onlyIf[$isBanned[$guildID;$findMember[$message[1];false;$guildID]]==true;{newEmbed:{description:Process cancelled.\n**Reason:** User not on the banlist. Please cross check the ID.}{footer:Moderator#COLON# $username:$userAvatar[$authorID]}{timestamp}}]
-    $onlyPerms[banmembers;Uh oh... You do not have \`BAN_MEMBERS\` permission.{extraOptions:{delete:5s}}]
-    $onlyIf[$hasPerms[$guildID;$clientID;banmembers]==true;I do not have \`BAN_MEMBERS\` permission.{extraOptions:{delete:5s}}]
-    $onlyIf[$findMember[$message[1];false]!=$authorID;Do not try to do awkward things like unbanning yourself.{extraOptions:{delete:5s}}]
-    $onlyIf[$message[1]!=;The syntax is \`unban [user id] (reason)\`.{extraOptions:{delete:5s}}]
+    $onlyPerms[banmembers;<a:error:1171148997918982155> You do not have \`BAN_MEMBERS\` permission.{extraOptions:{delete:5s}}]
+    $onlyIf[$hasPerms[$guildID;$clientID;banmembers]==true;<a:error:1171148997918982155> I do not have \`BAN_MEMBERS\` permission.{extraOptions:{delete:5s}}]
+    $onlyIf[$findMember[$message[1];false]!=$authorID;<:Huh:1171150436355539047> Do not try to do awkward things like unbanning yourself.{extraOptions:{delete:5s}}]
+    $onlyIf[$message[1]!=;<a:error:1171148997918982155> Correct usage is \`unban [user id] (reason)\`.{extraOptions:{delete:5s}}]
     `
 }]
