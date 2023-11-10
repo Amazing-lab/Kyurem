@@ -7,10 +7,11 @@ module.exports = [{
    
    $setGuildVar[leavemsg;$message]
 $title[Leave Message]
-$description[Leave Message updated by **$username**:
+$description[<a:sucessCheck:1172559094213775381> Leave Message successfully updated by **$username**:
 $message
 ]
-$footer[Logging Commands]
+$footer[Requested by $username;$useravatar[$authorID]]
+$addTimestamp
 $color[$getVar[color]]
 
 $onlyIf[$message!=;<a:error:1171148997918982155> **Invaild usages ! ( \`$getguildvar[prefix]$commandname < message >\` )**]

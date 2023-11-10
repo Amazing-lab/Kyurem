@@ -4,12 +4,15 @@ module.exports = [{
 	description: "set welcome image",
   aliases: ['set-welcomeimage','welcome-image'],
    code: `$setGuildVar[welimage;$message]
-$title[LOGS]
-$description[Welcome image updated by **$username**:
+$title[Welcome Channel]
+$description[<a:sucessCheck:1172559094213775381> Welcome image updated by **$username**:
 $message
 ]
-$footer[Logging Commands]
+$footer[Requested by $userName;$useravatar[$authorID]]
 $color[$getVar[color]]
-$onlyPerms[manageguild; :x: You need manage server permission to use this command]
+$onlyIf[$isValidLink[$message]==true;$getguildVar[error] **$username Invalid image link provided**]
+$onlyIf[$getguildVar[leavechannel]!=undefined;$getguildVar[error] **$username The join channel has not been setup yet**]
+$onlyIf[$hasPerms[$guildid;$authorid;managechannels]==true;$getguildVar[error] **You are missing the \`managechannels\` permission**]
+$onlyIf[$hasPerms[$guildid;$clientid;managechannels]==true;$getguildVar[error] **I am missing the \`manage channels\` permission**]`}]
    `
 }]

@@ -6,7 +6,7 @@ module.exports = [{
    code: `
    $title[Welcome Channel]
 $description[<a:sucessCheck:1172559094213775381> Successfully the set Welcome channel to <#$mentionedChannels[1]>.]
-$footer[$userName;$useravatar[$authorID]]
+$footer[Requested by $userName; Requested by $useravatar[$authorID]]
 $addTimesTamp
 $color[#303136]
 $color[$getVar[color]]
