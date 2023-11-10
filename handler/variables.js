@@ -10,5 +10,6 @@ module.exports = (bot) => {
   leavemsg: "",
   welimage: "",
   welmsg: "",
+   error: '<a:error:1171148997918982155>'
      });
 }
