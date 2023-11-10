@@ -10,7 +10,7 @@ const bot = new AoiClient({
 
     intents: ["MessageContent", "Guilds", "GuildMessages", "GuildPresences", "GuildMembers"],
 
-    events: ["onMessage", "onInteractionCreate"],
+    events: ["onMessage", "onInteractionCreate", "onJoin", "onLeave"],
 
     database: {
 

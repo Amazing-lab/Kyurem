@@ -15,10 +15,11 @@ $color[$getVar[color]]`
 },{
 type: "leave",
 $if: "old",
-channel: "$getGuildrVar[leavechannel]",
+channel: "$getGuildVar[leavechannel]",
 code: `$description[1;<@$authorID> , $getguildVar[leavemsg]]
 $if[$getguildvar[leaveimage]!=]
-$image[1;$getgildVar[leaveimage]]
+$image[1;$getguildVar[leaveimage]]
+$endif
 $color[$getVar[color]]
 
 `}]
