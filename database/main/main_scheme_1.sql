@@ -1,1 +1,1 @@
-{}
+{"leavemsg_984835343771648010":{"value":"Hope you will join us again <:sadblob:1172568991760404581> !","type":"string","key":"leavemsg_984835343771648010","ttl":0},"leavechannel_984835343771648010":{"value":"1172557141714944111","type":"string","key":"leavechannel_984835343771648010","ttl":0},"welchannel_984835343771648010":{"value":"1172557141714944111","type":"string","key":"welchannel_984835343771648010","ttl":0},"welmsg_984835343771648010":{"value":"thanks to join us <a:happy_happy:1172568700847661116>","type":"string","key":"welmsg_984835343771648010","ttl":0}}
