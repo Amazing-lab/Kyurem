@@ -2,7 +2,7 @@ module.exports = [{
     name:"set-welcomeimage",
     usage: "set-welcomeimage image url",
 	description: "set welcome image",
-  aliases: ['set-welcomeimage','welcome-image'],
+  aliases: ['set-welimage','welcome-image'],
    code: `$setGuildVar[welimage;$message]
 $title[Welcome Channel]
 $description[<a:sucessCheck:1172559094213775381> Welcome image updated by **$username**:
